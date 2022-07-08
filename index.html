@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vue</title>
+</head>
+<body>
+    <h1 id="app">
+        Hey Vue
+        {{ message }}
+    </h1>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+       let app= Vue.createApp({
+            data: function() {
+                return {
+                    message: 'Hello Vue!'
+                }
+            }
+        });
+        app.mount('#app');
+    </script>
+</body>
+</html>
